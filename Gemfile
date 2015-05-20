@@ -11,6 +11,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'mysql2'
+gem 'rack-cors', :require => 'rack/cors'
+
+
 group :development do
   gem 'binding_of_caller', :platforms=>[:mri_19]
   gem 'hub', :require=>nil
