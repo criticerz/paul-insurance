@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @lead.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @lead.last_name %>
+</p>
+
+<p>
+  <strong>Day phone:</strong>
+  <%= @lead.day_phone %>
+</p>
+
+<p>
+  <strong>Evening phone:</strong>
+  <%= @lead.evening_phone %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @lead.fax %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @lead.email %>
+</p>
+
+<p>
+  <strong>Address1:</strong>
+  <%= @lead.address1 %>
+</p>
+
+<p>
+  <strong>Address2:</strong>
+  <%= @lead.address2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @lead.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @lead.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @lead.zip %>
+</p>
+
+<p>
+  <strong>Household income:</strong>
+  <%= @lead.household_income %>
+</p>
+
+<p>
+  <strong>Date received:</strong>
+  <%= @lead.date_received %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @lead.type %>
+</p>
+
+<%= link_to 'Edit', edit_lead_path(@lead) %> |
+<%= link_to 'Back', leads_path %>

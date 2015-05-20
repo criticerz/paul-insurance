@@ -1,0 +1,1 @@
+json.extract! @lead, :id, :first_name, :last_name, :day_phone, :evening_phone, :fax, :email, :address1, :address2, :city, :state, :zip, :household_income, :date_received, :type, :created_at, :updated_at
