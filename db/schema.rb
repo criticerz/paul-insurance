@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20150520042043) do
   create_table "leads", force: true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.integer  "day_phone"
-    t.integer  "evening_phone"
-    t.integer  "fax"
+    t.integer  "day_phone",        limit: 8
+    t.integer  "evening_phone",    limit: 8
+    t.integer  "fax",              limit: 8
     t.string   "email"
     t.string   "address1"
     t.string   "address2"

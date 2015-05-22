@@ -18,5 +18,10 @@ class CreateLeads < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    change_column :leads, :day_phone, :bigint
+    change_column :leads, :evening_phone, :bigint
+    change_column :leads, :fax, :bigint
+
   end
 end

@@ -70,6 +70,11 @@ class LeadsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lead_params
+
+      params[:lead][:day_phone] = params[:lead][:day_phone].scan(/\d/).join('')
+      params[:lead][:evening_phone] = params[:lead][:evening_phone].scan(/\d/).join('')
+      params[:lead][:fax] = params[:lead][:fax].scan(/\d/).join('')
+
       params.require(:lead).permit(:first_name, :last_name, :day_phone, :evening_phone, :fax, :email, :address1, :address2, :city, :state, :zip, :household_income, :date_received, :type)
     end
 end
